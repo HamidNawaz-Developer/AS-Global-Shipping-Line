@@ -26,7 +26,14 @@
         .hero-overlay {
             background: linear-gradient(135deg, rgba(12, 35, 64, 0.92) 0%, rgba(26, 54, 93, 0.85) 100%);
         }
-    
+        .nav-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;  /* ← Center میں لانے کے لیے */
+    align-items: center;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
@@ -46,8 +53,8 @@
     </div>
 
     <!-- NAVBAR WITH ORIGINAL https://mm-freight-forwarding.vercel.app/ -->
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <nav class="sticky top-0 z-50 bg-white shadow-md" nav-container >
+           <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center gap-2 md:gap-6">
             
             <!-- ORIGINAL MM LOGO DESIGN -->
             <a href="#" class="flex items-center gap-3">
